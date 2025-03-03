@@ -30,11 +30,11 @@
     src: url('fonts/oswald-v53-cyrillic_latin-500.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* common */
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 500;
     margin: 0;
 }
 
@@ -44,16 +44,27 @@ body {
     border: 1px solid red;
 }
 
-ul {
-    list-style-type: none;
+img {
+    display: block;
+    max-width: 100%;
 }
 
 /* header  */
 .header {
-    padding: 37px 0;
+    padding: 31px 0;
     background: #66D1FF;
 }
 
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0;
+    padding: 0; */
+
+    /* gap: 225px; */
+}
 .header__btn {
     font-size: 24px;
     line-height: 29px;
@@ -68,12 +79,22 @@ ul {
     color: #060D10;
 }
 
+.header__btn {
+    text-decoration: none;
+}
+
+.phone {
+    text-decoration: none;
+}
+
+
 /* main */
 
 /* promo */
 
 .promo {
     padding: 240px 0 260px;
+    /* max-width: 100%; */
     background-image: url(images/promo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +102,7 @@ ul {
 }
 
 .promo__title {
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 60px;
@@ -97,17 +118,15 @@ ul {
     color: #FFFFFF;
 }
 
-.about {
-    background: rgba(102, 209, 255, 0.1);
-}
-
 /* about */
 
 .about {
-padding: 170px 0;
+    padding: 170px 0;
+    background: rgba(102, 209, 255, 0.1);
 }
+
 .about__title {
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     text-transform: uppercase;
     font-size: 48px;
@@ -116,8 +135,21 @@ padding: 170px 0;
     color: #060D10;
 }
 
+.about ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.about li {
+    list-style: none;
+    width: 33%;
+    
+}
+
 .about__subtitle {
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 500;
     text-transform: uppercase;
@@ -127,7 +159,7 @@ padding: 170px 0;
 }
 
 .about__text {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -141,8 +173,9 @@ padding: 170px 0;
     background: rgba(102, 209, 255, 0.1);
 }
 
-.about__title, .lead__title {
-    font-family: 'Oswald';
+.about__title,
+.lead__title {
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     text-transform: uppercase;
     font-size: 48px;
@@ -150,6 +183,7 @@ padding: 170px 0;
     text-align: center;
     color: #060D10;
 }
+
 .lead__btn {
     font-size: 36px;
     line-height: 44px;
@@ -157,8 +191,13 @@ padding: 170px 0;
     color: #060D10;
 }
 
-.photo-lead {
+.lead__wrap {
+    display: flex;
+    gap: 30px;
+}
 
+.photo-lead {
+    width: 25%;
 }
 
 /* footer */
@@ -166,6 +205,17 @@ padding: 170px 0;
     padding: 35px 0;
     background: #060D10;
 }
+
+.footer__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
 .footer_text {
     font-size: 20px;
     line-height: 33px;
