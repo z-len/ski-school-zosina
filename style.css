@@ -65,6 +65,7 @@ img {
 
     /* gap: 225px; */
 }
+
 .header__btn {
     font-size: 24px;
     line-height: 29px;
@@ -93,15 +94,21 @@ img {
 /* promo */
 
 .promo {
-    padding: 240px 0 260px;
-    /* max-width: 100%; */
+
     background-image: url(images/promo.jpg);
+    background-color: rgba(6, 13, 16, 0.25);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
+.promo__bg {
+    padding: 240px 0 260px;
+    background-color: rgba(6, 13, 16, 0.25);
+}
+
 .promo__title {
+    margin: 0;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -109,13 +116,19 @@ img {
     line-height: 89px;
     text-align: center;
     color: #FFFFFF;
+
 }
 
 .promo__content {
+
     font-size: 32px;
     line-height: 39px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.promo__content p {
+    margin: 60px 0 0;
 }
 
 /* about */
@@ -125,7 +138,14 @@ img {
     background: rgba(102, 209, 255, 0.1);
 }
 
+.about__list {
+    margin: 0 0 170px;
+
+}
+
 .about__title {
+    margin: 0 0 100px;
+
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     text-transform: uppercase;
@@ -140,15 +160,17 @@ img {
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 70px;
 }
 
 .about li {
     list-style: none;
-    width: 33%;
-    
+    width: calc(33.33% - 30px * 2 / 3);
 }
 
 .about__subtitle {
+    margin: 0 0 25px;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -159,17 +181,23 @@ img {
 }
 
 .about__text {
+
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
-    line-height: 36x;
+    line-height: 36px;
     color: #060D10;
+}
+
+.about__text p {
+    margin: 0;
 }
 
 /* lead  */
 .lead {
     padding: 170px 0 180px;
+    text-align: center;
     background: rgba(102, 209, 255, 0.1);
 }
 
@@ -187,7 +215,7 @@ img {
 .lead__btn {
     font-size: 36px;
     line-height: 44px;
-    text-align: center;
+
     color: #060D10;
 }
 
@@ -196,7 +224,7 @@ img {
     gap: 30px;
 }
 
-.photo-lead {
+.lead-img {
     width: 25%;
 }
 
